@@ -1,0 +1,236 @@
+/*body                  {background-color:white;font-family:Times New Roman,sans-serif;font-size:80%;}*/
+body { margin: 0; background: url("../dopimg/background28.jpg");}
+h1                    {font-size:22pt;}
+h2                    {font-size:20pt;}
+
+select.icon-menu option {
+background-repeat:no-repeat;
+background-position:bottom left;
+padding-left:30px;
+}
+
+/*margin: avto; background-color:#6b9080;background-color: #356aa0;*/
+div#wrap              {width:100%;padding:1em;border:0px solid #6b9080;}
+
+div#header            {color:black;padding:1em;margin-bottom:.5em;}
+div#header h1         {margin:0;padding:0;}
+div#header h2         {margin:0;padding:0;}
+
+div#nav               {background-color:#a4c3b2;color:#356aa0;float:left;width:100%;text-align:center;margin-bottom:.5em;font-size:22pt;}
+div#nav ul            {margin:0;padding:0;float:left;}
+div#nav li            {display:inline;margin:0;padding:0;margin-right:.5em;}
+div#nav li a          {padding:5px;text-decoration:none;color:#6b9080;float:left;width:8em;border-right:1px solid #6b9080;}
+div#nav li a:hover    {color:#ccc;background-color:#84a59d;}
+div#content           {padding:2em 1em;}
+div#content h2        {border-bottom:1px solid #ddd;margin-bottom:.5em;}
+div#content img.fancy {border:1px solid #ddd;padding:.5em;}
+div#content img.left  {float:left;margin-right:1em;}
+div#content img.right {float:right;margin-left:1em;}
+
+div.container3 {
+    height: 10em;
+    position: center; 
+}
+ 
+
+div#footer            {text-align:center;margin-top:.5em;}
+
+/*текст заголовка*/
+.two {
+  background: #6b9080;
+  padding: 50px 20px;
+  text-align: center;
+} 
+.two h1 {
+  font-family: 'sans-serif', fantasy ;
+  position: relative;
+  color: #5C2610;
+  font-size: 3em;
+  font-weight: normal;
+  line-height: 1;
+  padding: 10px 0;
+  margin: 0;
+  display: inline-block;
+}
+.two h1:before {
+  content: ""; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  height: 200%;
+  border-radius: 50%/30%;
+  border: 6px solid #5C2610;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+@media (max-width: 420px) {
+  .two h1 {font-size: 2em;}
+}
+/*
+все картинки черно-белые* /
+img {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;  
+}*/
+.box {
+  width: 200px;
+  margin: 20px auto 0;
+  position: relative;
+  overflow: hidden;
+}
+.box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+.box-inner img {
+  transition: all 0.4s ease-in-out;
+}
+.text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -40px;
+  text-align: center;
+  z-index: 2;
+}
+.text h2 {
+  font-family: 'Forum', cursive;
+  color: white;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 75px;
+  font-weight: 200;
+  text-transform: uppercase;
+  border-width: 1px 0;
+  border-color: rgba(255,255,255,0.5);
+  border-style: solid;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+.box:hover:before {
+  opacity: 1;
+}
+.box:hover img {
+  transform: scale(1.1);
+}
+.box:hover .text h2 {
+  opacity: 1;
+}
+
+/*Для основной картинки родителя*/
+* {box-sizing: border-box;}
+.image-decor {
+  position: relative;
+  display: table;
+  margin: 50px auto;
+  border: 5px solid #fff;
+  box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, .1);
+}
+.image-decor:before,
+.image-decor:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 150px;
+  height: 55px;
+  background: #fff;
+  box-shadow: 0 -10px 10px -5px rgba(0, 0, 0, .1);
+}
+.image-decor:before {
+  left: -50px;
+  bottom: -30px;
+  transform: rotate(30deg);
+}
+.image-decor:after {
+  right: -50px;
+  bottom: -30px;
+  transform: rotate(-30deg);
+}
+.image-decor img {display: block;}
+
+/*table {width: 100%; text-align: center; border-bottom: 2px solid #dfdfdf; border-radius: 6px; border-collapse: separate; border-spacing: 0px;}*/
+/*табл*/
+table {
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-size: 14px;
+border-radius: 10px;
+border-spacing: 0;
+text-align: center;
+}
+th {
+background: #BCEBDD;
+color: white;
+text-shadow: 0 1px 1px #2D2020;
+padding: 10px 20px;
+}
+th, td {
+border-style: solid;
+border-width: 0 1px 1px 0;
+border-color: white;
+}
+th:first-child, td:first-child {
+text-align: left;
+}
+th:first-child {
+border-top-left-radius: 10px;
+}
+th:last-child {
+border-top-right-radius: 10px;
+border-right: none;
+}
+td {
+padding: 10px 20px;
+background: #6b9080;  
+}
+tr:last-child td:first-child {
+border-radius: 0 0 0 10px;
+}
+tr:last-child td:last-child {
+border-radius: 0 0 10px 0;
+}
+tr td:last-child {
+border-right: none;
+}
+
+
+
+
+
+br{
+    
+}
+/*КНопка картинка*/
+
+ .avd_div{margin:30px auto;padding:0;text-align:right;display:block;}
+ .bucn_2_s{text-decoration:none;outline:none;display:inline-block;padding:12px 40px;margin:10px 20px;font-family:'Montserrat', sans-serif;font-size:24px;font-weight:300;color:#fff;transition:.5s;-webkit-border-radius:30px;-moz-border-radius:30px;-o-border-radius:30px;border-radius:30px;background-position:100% 0;background-size:200% 200%;text-shadow:0 1px 1px #555;-webkit-box-shadow:0 0 2px #333;-moz-box-shadow:0 0 2px #333;-o-box-shadow:0 0 2px #333;box-shadow:0 0 2px #333;background-color:#002878;background-image:linear-gradient(45deg, #002878 0%, #33d9de 50%, #002878 100%);background-image:-o-linear-gradient(45deg, #002878 0%, #33d9de 50%, #002878 100%);background-image:-moz-linear-gradient(45deg, #002878 0%, #33d9de 50%, #002878 100%);background-image:-webkit-linear-gradient(45deg, #002878 0%, #33d9de 50%, #002878 100%);background-image:-ms-linear-gradient(45deg, #002878 0%, #33d9de 50%, #002878 100%);}
+ .bucn_2_s:hover{-webkit-box-shadow:0 0 4px #333;-moz-box-shadow:0 0 4px #333;-o-box-shadow:0 0 4px #333;box-shadow:0 0 4px #333;background-position:0 0;}
+ .bucn_2_s:hover,.bucn_2_s:active,.bucn_2_s:focus{color:#fff;text-shadow:0 1px 2px #333;}
+ *::before, *::after{box-sizing:border-box;}
+
+
+
+/*
+.btn { background: #B0BED9; /* Цвет фона * / 
+      padding: 2px 10px; /* Поля вокруг текста * / 
+      font-size: 13px; /* Размер шрифта * / 
+      font-weight: bold; /* Насыщенность шрифта * / 
+      color: black; /* Цвет шрифта * / 
+      text-align: center; /* Надпись на кнопке по центру * / 
+      border: outset 2px #aaaaaa; /* Параметры рамки кнопки * / 
+      cursor: pointer; /* Изменение вида курсора при наведении* / }*/
+

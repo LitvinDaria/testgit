@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/AppleFromAppleTree"/>
+  <!--Resource driverClassName="com.ibm.db2.jcc.DB2Driver" maxActive="200" maxIdle="200" maxWait="5000" name="jdbc/TELBOOK2" password="db2inst" type="javax.sql.DataSource" url="jdbc:db2://10.85.0.16:50001/TELBOOK2" username="db2inst2">
+   </Resource>
+</Context-->
